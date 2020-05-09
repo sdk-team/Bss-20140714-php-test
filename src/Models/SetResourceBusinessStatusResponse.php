@@ -1,11 +1,11 @@
 <?php
 
 // This file is auto-generated, don't edit it. Thanks.
-namespace AlibabaCloud\SDK\Bss\V20140714\Bss;
+namespace AlibabaCloud\SDK\Bss\V20140714\Models;
 
 use AlibabaCloud\Tea\Model;
 
-class SetResourceBusinessStatusResponse extends Model{
+class SetResourceBusinessStatusResponse extends Model {
     protected $_name = [
         'requestId' => 'RequestId',
     ];
@@ -33,4 +33,5 @@ class SetResourceBusinessStatusResponse extends Model{
      * @var string
      */
     public $requestId;
+
 }

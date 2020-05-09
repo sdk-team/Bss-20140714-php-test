@@ -1,14 +1,14 @@
 <?php
 
 // This file is auto-generated, don't edit it. Thanks.
-namespace AlibabaCloud\SDK\Bss\V20140714\Bss;
+namespace AlibabaCloud\SDK\Bss\V20140714\Models;
 
 use AlibabaCloud\Tea\Model;
 
-use AlibabaCloud\SDK\Bss\V20140714\Bss\DescribeCouponDetailResponse\productCodes;
-use AlibabaCloud\SDK\Bss\V20140714\Bss\DescribeCouponDetailResponse\tradeTypes;
+use AlibabaCloud\SDK\Bss\V20140714\Models\DescribeCouponDetailResponse\productCodes;
+use AlibabaCloud\SDK\Bss\V20140714\Models\DescribeCouponDetailResponse\tradeTypes;
 
-class DescribeCouponDetailResponse extends Model{
+class DescribeCouponDetailResponse extends Model {
     protected $_name = [
         'requestId' => 'RequestId',
         'couponTemplateId' => 'CouponTemplateId',
@@ -120,10 +120,10 @@ class DescribeCouponDetailResponse extends Model{
             $model->application = $map['Application'];
         }
         if(isset($map['ProductCodes'])){
-            $model->productCodes = DescribeCouponDetailResponse\productCodes::fromMap($map['ProductCodes']);
+            $model->productCodes = productCodes::fromMap($map['ProductCodes']);
         }
         if(isset($map['TradeTypes'])){
-            $model->tradeTypes = DescribeCouponDetailResponse\tradeTypes::fromMap($map['TradeTypes']);
+            $model->tradeTypes = tradeTypes::fromMap($map['TradeTypes']);
         }
         return $model;
     }
@@ -132,84 +132,101 @@ class DescribeCouponDetailResponse extends Model{
      * @var string
      */
     public $requestId;
+
     /**
      * @description data.couponTemplateId
      * @var integer
      */
     public $couponTemplateId;
+
     /**
      * @description data.totalAmount
      * @var string
      */
     public $totalAmount;
+
     /**
      * @description data.balanceAmount
      * @var string
      */
     public $balanceAmount;
+
     /**
      * @description data.frozenAmount
      * @var string
      */
     public $frozenAmount;
+
     /**
      * @description data.expiredAmount
      * @var string
      */
     public $expiredAmount;
+
     /**
      * @description data.deliveryTime
      * @var string
      */
     public $deliveryTime;
+
     /**
      * @description data.expiredTime
      * @var string
      */
     public $expiredTime;
+
     /**
      * @description data.couponNumber
      * @var string
      */
     public $couponNumber;
+
     /**
      * @description data.status
      * @var string
      */
     public $status;
+
     /**
      * @description data.description
      * @var string
      */
     public $description;
+
     /**
      * @description data.gmtCreate
      * @var string
      */
     public $creationTime;
+
     /**
      * @description data.gmtModify
      * @var string
      */
     public $modificationTime;
+
     /**
      * @description data.priceLimit
      * @var string
      */
     public $priceLimit;
+
     /**
      * @description data.application
      * @var string
      */
     public $application;
+
     /**
      * @description data.productCode
      * @var DescribeCouponDetailResponse.productCodes
      */
     public $productCodes;
+
     /**
      * @description data.tradeType
      * @var DescribeCouponDetailResponse.tradeTypes
      */
     public $tradeTypes;
+
 }

@@ -1,11 +1,11 @@
 <?php
 
 // This file is auto-generated, don't edit it. Thanks.
-namespace AlibabaCloud\SDK\Bss\V20140714\Bss;
+namespace AlibabaCloud\SDK\Bss\V20140714\Models;
 
 use AlibabaCloud\Tea\Model;
 
-class DescribeCashDetailResponse extends Model{
+class DescribeCashDetailResponse extends Model {
     protected $_name = [
         'requestId' => 'RequestId',
         'balanceAmount' => 'BalanceAmount',
@@ -87,49 +87,59 @@ class DescribeCashDetailResponse extends Model{
      * @var string
      */
     public $requestId;
+
     /**
      * @description data.balanceAmount
      * @var string
      */
     public $balanceAmount;
+
     /**
      * @description data.amountOwed
      * @var string
      */
     public $amountOwed;
+
     /**
      * @description data.enableThresholdAlert
      * @var string
      */
     public $enableThresholdAlert;
+
     /**
      * @description data.miniAlertThreshold
      * @var integer
      */
     public $miniAlertThreshold;
+
     /**
      * @description data.depositAmount
      * @var string
      */
     public $frozenAmount;
+
     /**
      * @description data.creditCardAmount
      * @var string
      */
     public $creditCardAmount;
+
     /**
      * @description data.remmitanceAmount
      * @var string
      */
     public $remmitanceAmount;
+
     /**
      * @description data.creditLimit
      * @var string
      */
     public $creditLimit;
+
     /**
      * @description data.availableCredit
      * @var string
      */
     public $availableCredit;
+
 }

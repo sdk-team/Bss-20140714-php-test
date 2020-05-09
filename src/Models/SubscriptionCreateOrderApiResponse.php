@@ -1,11 +1,11 @@
 <?php
 
 // This file is auto-generated, don't edit it. Thanks.
-namespace AlibabaCloud\SDK\Bss\V20140714\Bss;
+namespace AlibabaCloud\SDK\Bss\V20140714\Models;
 
 use AlibabaCloud\Tea\Model;
 
-class vnoPayCallBackNotifyResponse extends Model{
+class SubscriptionCreateOrderApiResponse extends Model {
     protected $_name = [
         'requestId' => 'RequestId',
         'success' => 'Success',
@@ -31,7 +31,7 @@ class vnoPayCallBackNotifyResponse extends Model{
     }
     /**
      * @param array $map
-     * @return vnoPayCallBackNotifyResponse
+     * @return SubscriptionCreateOrderApiResponse
      */
     public static function fromMap($map = []) {
         $model = new self();
@@ -57,24 +57,29 @@ class vnoPayCallBackNotifyResponse extends Model{
      * @var string
      */
     public $requestId;
+
     /**
      * @description success
      * @var bool
      */
     public $success;
+
     /**
      * @description code
      * @var string
      */
     public $code;
+
     /**
      * @description message
      * @var string
      */
     public $message;
+
     /**
      * @description data
      * @var string
      */
     public $data;
+
 }

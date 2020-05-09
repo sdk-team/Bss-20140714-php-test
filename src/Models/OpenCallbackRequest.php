@@ -1,11 +1,11 @@
 <?php
 
 // This file is auto-generated, don't edit it. Thanks.
-namespace AlibabaCloud\SDK\Bss\V20140714\Bss;
+namespace AlibabaCloud\SDK\Bss\V20140714\Models;
 
 use AlibabaCloud\Tea\Model;
 
-class OpenCallbackRequest extends Model{
+class OpenCallbackRequest extends Model {
     protected $_name = [
         'paramStr' => 'paramStr',
     ];
@@ -33,4 +33,5 @@ class OpenCallbackRequest extends Model{
      * @var string
      */
     public $paramStr;
+
 }

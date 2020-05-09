@@ -1,11 +1,13 @@
 <?php
 
 // This file is auto-generated, don't edit it. Thanks.
-namespace AlibabaCloud\SDK\Bss\V20140714\Bss;
+namespace AlibabaCloud\SDK\Bss\V20140714\Models;
 
 use AlibabaCloud\Tea\Model;
 
-class DescribeCouponListResponse extends Model{
+use AlibabaCloud\SDK\Bss\V20140714\Models\DescribeCouponListResponse\coupons;
+
+class DescribeCouponListResponse extends Model {
     protected $_name = [
         'requestId' => 'RequestId',
         'coupons' => 'Coupons',
@@ -40,7 +42,7 @@ class DescribeCouponListResponse extends Model{
                 $model->coupons = [];
                 $n = 0;
                 foreach($map['Coupons'] as $item) {
-                    $model->coupons[$n++] = null !== $item ? DescribeCouponListResponse\coupons::fromMap($item) : $item;
+                    $model->coupons[$n++] = null !== $item ? coupons::fromMap($item) : $item;
                 }
             }
         }
@@ -51,9 +53,11 @@ class DescribeCouponListResponse extends Model{
      * @var string
      */
     public $requestId;
+
     /**
      * @description data
      * @var array
      */
     public $coupons;
+
 }

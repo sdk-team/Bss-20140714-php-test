@@ -1,11 +1,11 @@
 <?php
 
 // This file is auto-generated, don't edit it. Thanks.
-namespace AlibabaCloud\SDK\Bss\V20140714\Bss;
+namespace AlibabaCloud\SDK\Bss\V20140714\Models;
 
 use AlibabaCloud\Tea\Model;
 
-class CreateOrderRequest extends Model{
+class QueryForCssOrderRequest extends Model {
     protected $_name = [
         'paramStr' => 'paramStr',
     ];
@@ -19,7 +19,7 @@ class CreateOrderRequest extends Model{
     }
     /**
      * @param array $map
-     * @return CreateOrderRequest
+     * @return QueryForCssOrderRequest
      */
     public static function fromMap($map = []) {
         $model = new self();
@@ -33,4 +33,5 @@ class CreateOrderRequest extends Model{
      * @var string
      */
     public $paramStr;
+
 }

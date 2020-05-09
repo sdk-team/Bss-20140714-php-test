@@ -1,14 +1,14 @@
 <?php
 
 // This file is auto-generated, don't edit it. Thanks.
-namespace AlibabaCloud\SDK\Bss\V20140714\Bss\DescribeCouponListResponse;
+namespace AlibabaCloud\SDK\Bss\V20140714\Models\DescribeCouponListResponse;
 
 use AlibabaCloud\Tea\Model;
 
-use AlibabaCloud\SDK\Bss\V20140714\Bss\coupons\productCodes;
-use AlibabaCloud\SDK\Bss\V20140714\Bss\coupons\tradeTypes;
+use AlibabaCloud\SDK\Bss\V20140714\Models\coupons\productCodes;
+use AlibabaCloud\SDK\Bss\V20140714\Models\coupons\tradeTypes;
 
-class coupons extends Model{
+class coupons extends Model {
     protected $_name = [
         'couponTemplateId' => 'CouponTemplateId',
         'totalAmount' => 'TotalAmount',
@@ -114,10 +114,10 @@ class coupons extends Model{
             $model->application = $map['Application'];
         }
         if(isset($map['ProductCodes'])){
-            $model->productCodes = coupons\productCodes::fromMap($map['ProductCodes']);
+            $model->productCodes = productCodes::fromMap($map['ProductCodes']);
         }
         if(isset($map['TradeTypes'])){
-            $model->tradeTypes = coupons\tradeTypes::fromMap($map['TradeTypes']);
+            $model->tradeTypes = tradeTypes::fromMap($map['TradeTypes']);
         }
         return $model;
     }
@@ -126,79 +126,95 @@ class coupons extends Model{
      * @var integer
      */
     public $couponTemplateId;
+
     /**
      * @description totalAmount
      * @var string
      */
     public $totalAmount;
+
     /**
      * @description balanceAmount
      * @var string
      */
     public $balanceAmount;
+
     /**
      * @description frozenAmount
      * @var string
      */
     public $frozenAmount;
+
     /**
      * @description expiredAmount
      * @var string
      */
     public $expiredAmount;
+
     /**
      * @description deliveryTime
      * @var string
      */
     public $deliveryTime;
+
     /**
      * @description expiredTime
      * @var string
      */
     public $expiredTime;
+
     /**
      * @description couponNumber
      * @var string
      */
     public $couponNumber;
+
     /**
      * @description status
      * @var string
      */
     public $status;
+
     /**
      * @description description
      * @var string
      */
     public $description;
+
     /**
      * @description gmtCreate
      * @var string
      */
     public $creationTime;
+
     /**
      * @description gmtModify
      * @var string
      */
     public $modificationTime;
+
     /**
      * @description priceLimit
      * @var string
      */
     public $priceLimit;
+
     /**
      * @description application
      * @var string
      */
     public $application;
+
     /**
      * @description productCode
      * @var coupons.productCodes
      */
     public $productCodes;
+
     /**
      * @description tradeType
      * @var coupons.tradeTypes
      */
     public $tradeTypes;
+
 }

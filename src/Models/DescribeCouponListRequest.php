@@ -1,11 +1,11 @@
 <?php
 
 // This file is auto-generated, don't edit it. Thanks.
-namespace AlibabaCloud\SDK\Bss\V20140714\Bss;
+namespace AlibabaCloud\SDK\Bss\V20140714\Models;
 
 use AlibabaCloud\Tea\Model;
 
-class DescribeCouponListRequest extends Model{
+class DescribeCouponListRequest extends Model {
     protected $_name = [
         'status' => 'Status',
         'startDeliveryTime' => 'StartDeliveryTime',
@@ -13,8 +13,7 @@ class DescribeCouponListRequest extends Model{
         'pageSize' => 'PageSize',
         'pageNum' => 'PageNum',
     ];
-    public function validate() {
-    }
+    public function validate() {}
     public function toMap() {
         $res = [];
         $res['Status'] = $this->status;
@@ -52,24 +51,29 @@ class DescribeCouponListRequest extends Model{
      * @var string
      */
     public $status;
+
     /**
      * @description startDeliveryTime
      * @var string
      */
     public $startDeliveryTime;
+
     /**
      * @description endDeliveryTime
      * @var string
      */
     public $endDeliveryTime;
+
     /**
      * @description pageSize
      * @var integer
      */
     public $pageSize;
+
     /**
      * @description pageNum
      * @var integer
      */
     public $pageNum;
+
 }

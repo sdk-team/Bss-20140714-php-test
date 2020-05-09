@@ -1,16 +1,15 @@
 <?php
 
 // This file is auto-generated, don't edit it. Thanks.
-namespace AlibabaCloud\SDK\Bss\V20140714\Bss;
+namespace AlibabaCloud\SDK\Bss\V20140714\Models;
 
 use AlibabaCloud\Tea\Model;
 
-class DescribeCouponDetailRequest extends Model{
+class DescribeCouponDetailRequest extends Model {
     protected $_name = [
         'couponNumber' => 'CouponNumber',
     ];
-    public function validate() {
-    }
+    public function validate() {}
     public function toMap() {
         $res = [];
         $res['CouponNumber'] = $this->couponNumber;
@@ -32,4 +31,5 @@ class DescribeCouponDetailRequest extends Model{
      * @var string
      */
     public $couponNumber;
+
 }

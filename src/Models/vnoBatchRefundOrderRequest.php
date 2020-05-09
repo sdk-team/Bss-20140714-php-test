@@ -1,11 +1,11 @@
 <?php
 
 // This file is auto-generated, don't edit it. Thanks.
-namespace AlibabaCloud\SDK\Bss\V20140714\Bss;
+namespace AlibabaCloud\SDK\Bss\V20140714\Models;
 
 use AlibabaCloud\Tea\Model;
 
-class vnoPayCallBackNotifyRequest extends Model{
+class vnoBatchRefundOrderRequest extends Model {
     protected $_name = [
         'paramStr' => 'paramStr',
     ];
@@ -19,7 +19,7 @@ class vnoPayCallBackNotifyRequest extends Model{
     }
     /**
      * @param array $map
-     * @return vnoPayCallBackNotifyRequest
+     * @return vnoBatchRefundOrderRequest
      */
     public static function fromMap($map = []) {
         $model = new self();
@@ -33,4 +33,5 @@ class vnoPayCallBackNotifyRequest extends Model{
      * @var string
      */
     public $paramStr;
+
 }

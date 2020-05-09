@@ -1,11 +1,11 @@
 <?php
 
 // This file is auto-generated, don't edit it. Thanks.
-namespace AlibabaCloud\SDK\Bss\V20140714\Bss;
+namespace AlibabaCloud\SDK\Bss\V20140714\Models;
 
 use AlibabaCloud\Tea\Model;
 
-class SubscriptionCreateOrderApiRequest extends Model{
+class SubscriptionCreateOrderApiRequest extends Model {
     protected $_name = [
         'ownerId' => 'ownerId',
         'productCode' => 'productCode',
@@ -39,9 +39,11 @@ class SubscriptionCreateOrderApiRequest extends Model{
      * @var string
      */
     public $ownerId;
+
     /**
      * @description productCode
      * @var string
      */
     public $productCode;
+
 }

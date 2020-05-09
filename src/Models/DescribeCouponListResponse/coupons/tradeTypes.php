@@ -1,11 +1,11 @@
 <?php
 
 // This file is auto-generated, don't edit it. Thanks.
-namespace AlibabaCloud\SDK\Bss\V20140714\Bss\DescribeCouponDetailResponse;
+namespace AlibabaCloud\SDK\Bss\V20140714\Models\DescribeCouponListResponse\coupons;
 
 use AlibabaCloud\Tea\Model;
 
-class tradeTypes extends Model{
+class tradeTypes extends Model {
     protected $_name = [
         'tradeType' => 'TradeType',
     ];
@@ -39,4 +39,5 @@ class tradeTypes extends Model{
      * @var array
      */
     public $tradeType;
+
 }
